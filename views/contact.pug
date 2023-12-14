@@ -1,0 +1,15 @@
+extends base
+
+block style
+  link(rel='stylesheet', href='/static/style.css')
+  link(rel='stylesheet', href='/static/styleContact.css')
+
+block content
+  h1 Contact Us
+  form(action="/contact", method="post", class="myForm")
+    input(type="text", class="myInput", name="name", placeholder="Enter your name")
+    input(type="text", class="myInput", name="phone", placeholder="Enter your phone")
+    input(type="email", class="myInput", name="email", placeholder="Enter your email")
+    input(type="text", class="myInput", name="address", placeholder="Enter your address")
+    input(type="text", class="myInput", name="desc", placeholder="Enter your concern description")
+    button(type="submit", class="btn") Submit 

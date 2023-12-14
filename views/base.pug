@@ -1,0 +1,36 @@
+// base.pug
+doctype html
+html
+  head
+    title Bhairav Dance Academy
+
+    // Include CSS file
+    block style
+      <link rel="stylesheet" href="/static/style.css">
+
+
+    // Include JavaScript files
+    block scripts
+
+  body
+    nav#navbar
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='/about') About
+        li
+          a(href='/services') Services
+        li
+          a(href='/class-info') Class Info
+
+        // Contact Us link wrapped in square brackets
+        li #[a(href="/contact") Contact Us]
+
+  // Content block
+  block content
+
+  // Footer block
+  block #footer
+    p
+      | Copyright 2023 Bhairav Dance Academy.com | All rights reserved
